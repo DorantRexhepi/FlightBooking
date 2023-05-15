@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result - after post</title>
+</head>
+<body>
+<p th:text="${passenger.getFirstName()}">FirstName</p>
+<p th:text="${passenger.getLastName()}">LastName</p>
+<p th:text="${#dates.format(person.getBirthDay(),'dd.mm.yyyy')}">Date of Birth</p>
+<p th:text="${passenger.getEmail()}">Email</p>
+<p th:text="${passenger.getPhoneNumber()}">Phone Number</p>
+<p th:text="${passenger.getAdress()}">Adress</p>
+<p th:text="${passenger.getAdress2()}">Adress2</p>
+<p th:text="${passenger.getCountry()}">Country</p>
+<p th:text="${passenger.getCity()}">City</p>
+<p th:text="${passenger.getflightType()}">Flight Type</p>
+<p th:text="${#dates.format(passenger.getDepartureDate(),'dd.mm.yyyy')}">Departure Date or Time</p>
+<p th:text="${#dates.format(passenger.getReturnDate(),'dd.mm.yyyy')}">Return Date or Time</p>
+<p th:text="${passenger.getDestinationFrom()}">Detstination From</p>
+<p th:text="${passenger.getCountry()}">Country</p>
+<p th:text="${passenger.getCity()}">City</p>
+<p th:text="${passenger.getDestinationTo()}">Destination To</p>
+<p th:text="${passenger.getCountry()}">Country</p>
+<p th:text="${passenger.getCity()}">City</p>
+<p th:text="${filename}"></p>
+
+</body>
+</html>
